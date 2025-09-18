@@ -1,0 +1,25 @@
+<form id="registerForm">
+  <input type="text" name="username" placeholder="Username" />
+  <input type="password" name="password" placeholder="Password" />
+  <button type="submit">Register</button>
+</form>
+
+<script>
+const form = document.getElementById('registerForm');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = {
+    username: form.username.value,
+    password: form.password.value
+  };
+  
+  fetch('https://508da0e3e608.ngrok-free.app/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.text())
+  .then(alert)
+  .catch(console.error);
+});
+</script>
