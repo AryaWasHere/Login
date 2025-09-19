@@ -21,7 +21,7 @@ body {
   backdrop-filter: blur(12px);
   padding: 40px;
   border-radius: 16px;
-  width: 350px;  /* biar form gak kepanjangan */
+  width: 300px;  /* biar form gak kepanjangan */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
   color: white;
