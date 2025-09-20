@@ -1,4 +1,4 @@
-const NGROK_URL = 'https://508da0e3e608.ngrok-free.app'; // ganti sesuai ngrok terbaru
+const NGROK_URL = 'https://22ecc96cfe7b.ngrok-free.app'; // ganti sesuai ngrok terbaru
 
 document.getElementById('signinForm').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -22,3 +22,4 @@ document.getElementById('signinForm').addEventListener('submit', (e) => {
     alert("Terjadi error saat login!");
   });
 });
+
